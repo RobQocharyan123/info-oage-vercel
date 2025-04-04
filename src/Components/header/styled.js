@@ -14,6 +14,7 @@ export const HeaderGeneralBlock = styled(Col)`
   background-color: #363636;
   border-radius: 15px;
   padding: 0 20px;
+  z-index: 2;
 
   ul {
     display: flex;
