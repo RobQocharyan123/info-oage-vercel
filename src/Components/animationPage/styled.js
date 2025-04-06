@@ -1,16 +1,29 @@
-import { Col } from 'antd';
-import styled from 'styled-components';
+import { Col } from "antd";
+import styled from "styled-components";
+import backgroundGif from "../../Assets/info/intro_pc.gif";
+
+export const BackgroundBlock = styled(Col)`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  background: url(${backgroundGif}) no-repeat center center fixed;
+  background-size: cover;
+  pointer-events: none;
+`;
 
 export const AnimationGeneralBlock = styled(Col)`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  height: calc(100vh - 150px);
   padding: 0 100px;
+
   @media screen and (max-width: 1100px) {
     padding: 0 50px;
   }

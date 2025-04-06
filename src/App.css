@@ -1,6 +1,4 @@
 .App {
-  background: url('./Assets/info/intro_pc.gif') no-repeat center center fixed;
-  background-size: cover;
-  height: calc(100vh - 35px);
-  padding-top: 35px;
+  position: relative;
+  z-index: 1;
 }

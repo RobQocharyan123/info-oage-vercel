@@ -1,5 +1,5 @@
-import { Col } from 'antd';
-import styled from 'styled-components';
+import { Col } from "antd";
+import styled from "styled-components";
 
 export const HeaderGeneralBlock = styled(Col)`
   width: 100%;
@@ -10,11 +10,12 @@ export const HeaderGeneralBlock = styled(Col)`
   align-items: center;
   user-select: none;
   margin: 0 auto;
-  padding: 0;
   background-color: #363636;
   border-radius: 15px;
   padding: 0 20px;
-  z-index: 2;
+  position: sticky;
+  top: 20px;
+  z-index: 3;
 
   ul {
     display: flex;
