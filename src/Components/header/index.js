@@ -27,13 +27,25 @@ const Header = () => {
   const handleLinkClick = (link) => {
     setActiveLink(link);
   };
+
+  const handleScrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <HeaderGeneralBlock>
       <nav>
         <ul>
           <li>
             {' '}
-            <img src={logoIcon} alt={logoIcon} />
+            <img
+              src={logoIcon}
+              alt={logoIcon}
+              style={{ cursor: 'pointer' }}
+              onClick={handleScrollTop}
+            />
           </li>
           <li>
             <Link
