@@ -78,10 +78,30 @@ const Header = () => {
       </nav>
 
       <HeaderSocialIconsBlock>
-        <HeaderImgIconBlock src={telegramIcon} alt={telegramIcon} />
-        <HeaderImgIconBlock src={infoIcon} alt={infoIcon} />
-        <HeaderImgIconBlock src={twitterIcon} alt={twitterIcon} />
-        <HeaderImgIconBlock src={gmailIcon} alt={gmailIcon} />
+        <a
+          href="https://t.me/yourusername"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <HeaderImgIconBlock src={telegramIcon} alt="Telegram" />
+        </a>
+        <a
+          href="https://yourinfo.link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <HeaderImgIconBlock src={infoIcon} alt="Info" />
+        </a>
+        <a
+          href="https://twitter.com/yourusername"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <HeaderImgIconBlock src={twitterIcon} alt="Twitter" />
+        </a>
+        <a href="mailto:your.email@example.com">
+          <HeaderImgIconBlock src={gmailIcon} alt="Gmail" />
+        </a>
       </HeaderSocialIconsBlock>
     </HeaderGeneralBlock>
   );
