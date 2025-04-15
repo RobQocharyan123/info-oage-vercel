@@ -51,6 +51,10 @@ export const HeaderGeneralBlock = styled(Col)`
     height: 35px;
     margin-top: 5px;
   }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const HeaderSocialIconsBlock = styled(Col)`

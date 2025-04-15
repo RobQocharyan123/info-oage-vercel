@@ -27,6 +27,9 @@ export const AnimationGeneralBlock = styled(Col)`
   @media screen and (max-width: 1100px) {
     padding: 0 50px;
   }
+  @media screen and (max-width: 769px) {
+    padding: 0 10px;
+  }
 `;
 
 export const AnimationLeftSectionBlock = styled(Col)`
@@ -59,6 +62,14 @@ export const AnimationRightSectionBlock = styled(Col)`
   @media screen and (max-width: 1500px) {
     .consoleLogo {
       margin-left: 50px;
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    align-items: center;
+    img {
+      width: 100px;
+      margin-top: 100px;
     }
   }
 `;

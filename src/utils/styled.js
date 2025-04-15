@@ -1,5 +1,5 @@
-import { Button } from 'antd';
-import styled from 'styled-components';
+import { Button } from "antd";
+import styled from "styled-components";
 
 export const ButtonPlayConsole = styled(Button)`
   width: 600px;
@@ -33,5 +33,17 @@ export const ButtonPlayConsole = styled(Button)`
     height: 40px;
     font-size: 20px;
     line-height: 26px;
+  }
+
+  @media screen and (max-width: 769px) {
+    margin-top: 0px;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 20px;
   }
 `;

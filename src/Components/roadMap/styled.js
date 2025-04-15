@@ -17,6 +17,10 @@ export const RoadMapContentBlock = styled(Col)`
   @media screen and (max-width: 1000px) {
     padding: 0 150px;
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 0 50px;
+  }
 `;
 
 export const RoadMapBlock = styled(Col)`
@@ -27,11 +31,11 @@ export const RoadMapBlock = styled(Col)`
   gap: 15px;
 
   .content {
+    width: 400px;
     font-weight: 400;
     font-size: 40px;
     line-height: 45px;
     color: #ffffff;
-    width: 400px;
   }
 
   h2 {
@@ -56,6 +60,19 @@ export const RoadMapBlock = styled(Col)`
     h2 {
       font-size: 25px;
       line-height: 25px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+
+    .content {
+      width: 100%;
+      font-size: 25px;
+      line-height: 30px;
+    }
+    h2 {
+      margin-top: 10px;
     }
   }
 `;
@@ -97,6 +114,19 @@ export const RoadMapSecondBlock = styled(Col)`
       line-height: 25px;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+    .content {
+      width: 100%;
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    h2 {
+      margin-top: 10px;
+    }
+  }
 `;
 
 export const RoadMapListentingAndAirdropBlock = styled(Col)`
@@ -113,6 +143,10 @@ export const RoadMapListentingAndAirdropBlock = styled(Col)`
 
   @media screen and (max-width: 1300px) {
     width: 300px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
   }
 `;
 
