@@ -20,6 +20,10 @@ export const AboutTextsBlocks = styled(Col)`
   @media screen and (max-width: 1100px) {
     padding: 0 50px;
   }
+
+  @media screen and (max-width: 550px) {
+    align-items: baseline;
+  }
 `;
 
 export const AboutBlock = styled(Col)`
@@ -34,5 +38,10 @@ export const AboutBlock = styled(Col)`
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 15px;
+    line-height: 20px;
   }
 `;
