@@ -1,5 +1,5 @@
-import { ButtonPlayConsole } from '../../utils/styled';
-import { AboutBlock, AboutGeneralBlock, AboutTextsBlocks } from './styled';
+import { ButtonPlayConsole } from "../../utils/styled";
+import { AboutBlock, AboutGeneralBlock, AboutTextsBlocks } from "./styled";
 
 const About = () => {
   return (

@@ -130,7 +130,7 @@ export const RoadMapSecondBlock = styled(Col)`
 `;
 
 export const RoadMapListentingAndAirdropBlock = styled(Col)`
-  width: 450px;
+  width: 250px;
   height: 152px;
   float: right;
   background-color: rgba(217, 217, 217, 0.2);
@@ -140,10 +140,6 @@ export const RoadMapListentingAndAirdropBlock = styled(Col)`
   border-radius: 23px;
   background-clip: padding-box;
   opacity: 0.8;
-
-  @media screen and (max-width: 1300px) {
-    width: 300px;
-  }
 
   @media screen and (max-width: 768px) {
     margin-top: 10px;

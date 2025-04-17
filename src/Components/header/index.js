@@ -7,7 +7,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import logoIcon from "../../Assets/header/logo-icon.svg";
 import telegramIcon from "../../Assets/header/telegram-icon.svg";
 import infoIcon from "../../Assets/header/console-icon.svg";
-import twitterIcon from "../../Assets/header/twitter-icon.svg";
+import twitterIcon from "../../Assets/header/twitter-icon.png";
 import gmailIcon from "../../Assets/header/gmail-icon.svg";
 import { useEffect, useState } from "react";
 import Burger from "./burger/index";
@@ -88,21 +88,21 @@ const Header = () => {
           >
             <HeaderImgIconBlock src={telegramIcon} alt="Telegram" />
           </a>
-          <a
+          {/* <a
             href="https://yourinfo.link"
             target="_blank"
             rel="noopener noreferrer"
           >
             <HeaderImgIconBlock src={infoIcon} alt="Info" />
-          </a>
+          </a> */}
           <a
-            href="https://twitter.com/yourusername"
+            href="https://x.com/ConsP_official"
             target="_blank"
             rel="noopener noreferrer"
           >
             <HeaderImgIconBlock src={twitterIcon} alt="Twitter" />
           </a>
-          <a href="mailto:your.email@example.com">
+          <a href="mailto:conspro777@gmail.com" target="_blank">
             <HeaderImgIconBlock src={gmailIcon} alt="Gmail" />
           </a>
         </HeaderSocialIconsBlock>

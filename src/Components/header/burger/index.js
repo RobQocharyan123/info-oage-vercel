@@ -12,7 +12,7 @@ import cancelIcon from "../../../Assets/burger/info-project-cancel-icon.svg";
 
 import telegramIcon from "../../../Assets/header/telegram-icon.svg";
 import infoIcon from "../../../Assets/header/console-icon.svg";
-import twitterIcon from "../../../Assets/header/twitter-icon.svg";
+import twitterIcon from "../../../Assets/header/twitter-icon.png";
 import gmailIcon from "../../../Assets/header/gmail-icon.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -55,19 +55,23 @@ const Burger = () => {
             </Link>
           </li>
 
-          <li>
+          {/* <li>
             <Link to={"https://www.google.com/"} onClick={closeBurger}>
               <BurgerImgIconBlock src={infoIcon} alt="Info" />
             </Link>
-          </li>
+          </li> */}
 
           <li>
-            <Link to={"https://www.google.com/"} onClick={closeBurger}>
+            <Link
+              to={"https://x.com/ConsP_official"}
+              target="_blank"
+              onClick={closeBurger}
+            >
               <BurgerImgIconBlock src={twitterIcon} alt="Twitter" />
             </Link>
           </li>
           <li>
-            <Link to={"https://www.google.com/"} onClick={closeBurger}>
+            <Link to={"mailto:conspro777@gmail.com"} onClick={closeBurger}>
               <BurgerImgIconBlock src={gmailIcon} alt="Gmail" />
             </Link>
           </li>

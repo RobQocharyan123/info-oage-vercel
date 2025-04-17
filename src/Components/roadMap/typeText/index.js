@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { TypeTextGeneralBlock } from "./styled";
 
-const messages = [
-  "Application launch,Creation of community",
-  "Creation of community",
-  "Task for rewards"
-];
+const messages = ["Listing and Airdrop expected in the first quarter of 2026."];
 
 const Typewriter = () => {
   const [text, setText] = useState("");
