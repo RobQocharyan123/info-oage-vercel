@@ -10,11 +10,15 @@ import dropIcon from "../../Assets/drop.png";
 import coinBottomIcon from "../../Assets/coin_bottom.png";
 import coinTopIcon from "../../Assets/coin_top.png";
 import consolLogoIcon from "../../Assets/conslogo.png";
+import { useLocation } from "react-router-dom";
 
 const AnimationPage = () => {
+  const location = useLocation();
+
   return (
     <>
-      <BackgroundBlock></BackgroundBlock>
+      <BackgroundBlock pathname={location.pathname}></BackgroundBlock>
+
       <AnimationGeneralBlock>
         <AnimationLeftSectionBlock>
           <motion.img

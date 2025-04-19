@@ -1,5 +1,5 @@
-import { Col } from 'antd';
-import styled from 'styled-components';
+import { Col } from "antd";
+import styled from "styled-components";
 
 export const AboutGeneralBlock = styled(Col)`
   position: relative;
@@ -7,22 +7,43 @@ export const AboutGeneralBlock = styled(Col)`
 `;
 
 export const AboutTextsBlocks = styled(Col)`
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 100px;
-  padding: 0 50px;
-
-  @media screen and (max-width: 1500px) {
-    padding: 0 100px;
+  width: 70%;
+  height: calc(100vh - 200px);
+  background-color: rgba(217, 217, 217, 0.2);
+  box-shadow: rgb(204, 219, 232) 3px 3px 2px -1px inset,
+    rgba(255, 255, 255, 0.5) -3px -9px 1px -8px;
+  border-radius: 23px;
+  background-clip: padding-box;
+  opacity: 0.8;
+  margin: 0 auto;
+  overflow-y: auto;
+  text-align: justify;
+  padding: 10px;
+  margin-top: 30px;
+  &::-webkit-scrollbar {
+    width: 3px;
   }
-  @media screen and (max-width: 1100px) {
-    padding: 0 50px;
+
+  &::-webkit-scrollbar-thumb {
+    background: #64ffff;
+    border-radius: 1.5px;
   }
 
-  @media screen and (max-width: 550px) {
-    align-items: baseline;
+  &::-webkit-scrollbar-thumb {
+    background: #a0a1b1;
+  }
+
+  .paragraph {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    color: #fff;
+  }
+
+  .more {
+    color: blue;
+    cursor: pointer;
+    margin-left: 30px;
   }
 `;
 
