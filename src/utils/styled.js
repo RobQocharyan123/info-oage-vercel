@@ -35,7 +35,7 @@ export const ButtonPlayConsole = styled(Button)`
     line-height: 26px;
   }
 
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 791px) {
     margin-top: 0px;
   }
 

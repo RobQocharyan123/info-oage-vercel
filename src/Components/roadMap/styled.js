@@ -18,7 +18,7 @@ export const RoadMapContentBlock = styled(Col)`
     padding: 0 150px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 790px) {
     padding: 0 50px;
   }
 `;
@@ -63,7 +63,7 @@ export const RoadMapBlock = styled(Col)`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 790px) {
     margin-top: 10px;
 
     .content {
@@ -115,7 +115,7 @@ export const RoadMapSecondBlock = styled(Col)`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 790px) {
     margin-top: 10px;
     .content {
       width: 100%;
@@ -141,7 +141,7 @@ export const RoadMapListentingAndAirdropBlock = styled(Col)`
   background-clip: padding-box;
   opacity: 0.8;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 790px) {
     margin-top: 10px;
   }
 `;

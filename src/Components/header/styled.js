@@ -52,7 +52,7 @@ export const HeaderGeneralBlock = styled(Col)`
     margin-top: 5px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 790px) {
     display: none;
   }
 `;

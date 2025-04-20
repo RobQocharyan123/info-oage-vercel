@@ -21,7 +21,7 @@ export const InfoTextsBlocks = styled(Col)`
     padding: 0 50px;
   }
 
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 791px) {
     flex-direction: column;
     margin-top: 50px;
   }
@@ -41,7 +41,7 @@ export const InfoBlock = styled(Col)`
     line-height: 25px;
   }
 
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 791px) {
     width: 300px;
     margin-top: 10px;
   }

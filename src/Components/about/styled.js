@@ -20,6 +20,7 @@ export const AboutTextsBlocks = styled(Col)`
   text-align: justify;
   padding: 10px;
   margin-top: 30px;
+  display: flex;
   &::-webkit-scrollbar {
     width: 3px;
   }
@@ -36,14 +37,35 @@ export const AboutTextsBlocks = styled(Col)`
   .paragraph {
     font-weight: 400;
     font-size: 30px;
-    line-height: 40px;
+    line-height: 35px;
     color: #fff;
   }
+  @media screen and (max-width: 1400px) {
+    .paragraph {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
 
-  .more {
-    color: blue;
-    cursor: pointer;
-    margin-left: 30px;
+  @media screen and (max-width: 840px) {
+    .paragraph {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    .paragraph {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    .paragraph {
+      font-size: 13px;
+      line-height: 18px;
+    }
   }
 `;
 
@@ -64,5 +86,15 @@ export const AboutBlock = styled(Col)`
   @media screen and (max-width: 550px) {
     font-size: 15px;
     line-height: 20px;
+  }
+`;
+
+export const ReadMoreSpan = styled.span`
+  color: #1890ff;
+  cursor: pointer;
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
   }
 `;

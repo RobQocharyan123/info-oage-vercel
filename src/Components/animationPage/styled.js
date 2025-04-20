@@ -30,7 +30,7 @@ export const AnimationGeneralBlock = styled(Col)`
   @media screen and (max-width: 1100px) {
     padding: 0 50px;
   }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 791px) {
     padding: 0 10px;
   }
 `;
@@ -68,7 +68,7 @@ export const AnimationRightSectionBlock = styled(Col)`
     }
   }
 
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 791px) {
     align-items: center;
     img {
       width: 100px;

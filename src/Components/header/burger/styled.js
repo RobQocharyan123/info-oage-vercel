@@ -10,7 +10,7 @@ export const BurgerGeneralBlock = styled(Col)`
   z-index: 3;
   padding: 0 20px;
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 791px) {
     display: none;
   }
 `;

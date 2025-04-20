@@ -77,6 +77,11 @@ const Header = () => {
                 About us
               </Link>
             </li>
+            <li>
+              <a href="mailto:conspro777@gmail.com" target="_blank">
+                For Partnership
+              </a>
+            </li>
           </ul>
         </nav>
 
