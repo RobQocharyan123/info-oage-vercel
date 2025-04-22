@@ -39,7 +39,10 @@ export const BurgerIconBlock = styled(Col)`
 export const BurgerBlock = styled(Drawer)`
   background-color: #363636 !important;
   box-shadow: 0px 4px 4px 0px #00000040;
-
+  .anticon {
+    margin-right: -6px !important;
+    margin-top: 5px !important;
+  }
   .ant-drawer-close {
     position: absolute;
     right: 2px;
@@ -56,6 +59,7 @@ export const BurgerBlock = styled(Drawer)`
     gap: 24px;
     margin: 0 auto;
     margin-top: 50px;
+    padding-inline-start: 0;
     .burgerText {
       a {
         color: #ffffff !important;

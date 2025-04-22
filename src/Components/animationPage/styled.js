@@ -9,10 +9,11 @@ export const BackgroundBlock = styled(Col)`
   width: 100%;
   height: 100vh;
   z-index: 0;
-  background: ${({ pathname }) =>
+  /* background: ${({ pathname }) =>
     pathname === "/about"
       ? "black"
-      : `url(${backgroundGif}) no-repeat center center fixed`};
+      : `url(${backgroundGif}) no-repeat center center fixed`}; */
+  background-color: #1c1c1e;
   background-size: cover;
   pointer-events: none;
 `;

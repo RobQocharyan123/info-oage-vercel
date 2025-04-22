@@ -20,4 +20,9 @@ export const TypeTextGeneralBlock = styled.p`
       line-height: 20px;
     }
   }
+
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+    line-height: 25px;
+  }
 `;

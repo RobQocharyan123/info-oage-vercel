@@ -15,21 +15,28 @@ import infoIcon from "../../../Assets/header/console-icon.svg";
 import twitterIcon from "../../../Assets/header/twitter-icon.png";
 import gmailIcon from "../../../Assets/header/gmail-icon.svg";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Drawer } from "antd";
 
 const Burger = () => {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
   const showDrawer = () => {
     setOpen(true);
   };
   const closeBurger = () => {
     setOpen(false);
   };
+
   return (
     <BurgerGeneralBlock>
-      <BurgerLogoBlock onClick={showDrawer}>
-        <img src={burgerLogo} alt={burgerLogo} />
+      <BurgerLogoBlock>
+        <img
+          src={burgerLogo}
+          alt={burgerLogo}
+          onClick={() => navigate("/info")}
+          style={{ cursor: "pointer" }}
+        />
         <img
           src={burgerIcon}
           alt={burgerIcon}
@@ -47,6 +54,11 @@ const Burger = () => {
           </li>
           <li className="burgerText" onClick={closeBurger}>
             <Link to={"/about"}>About us</Link>
+          </li>
+          <li className="burgerText">
+            <a href="mailto:conspro777@gmail.com" target="_blank">
+              For Partnership
+            </a>
           </li>
 
           <li>

@@ -17,23 +17,21 @@ const Header = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (location.pathname !== "/info") {
-      navigate("/info");
+    const currentPath = location.pathname.split("/")[1];
+    if (location.pathname === "/") {
+      navigate("/info", { replace: true });
     } else {
-      const currentPath = location.pathname.split("/")[1];
       setActiveLink(currentPath);
     }
-  }, []);
+  }, [location.pathname]);
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
   };
 
   const handleScrollTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
+    navigate("/info");
+    setActiveLink("info");
   };
   return (
     <>
@@ -56,7 +54,7 @@ const Header = () => {
                 onClick={() => handleLinkClick("info")}
                 className={activeLink === "info" ? "activeLink" : ""}
               >
-                What is info?
+                What is Console?
               </Link>
             </li>
             <li>

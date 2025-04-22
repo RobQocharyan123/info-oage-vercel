@@ -21,6 +21,7 @@ export const AboutTextsBlocks = styled(Col)`
   padding: 10px;
   margin-top: 30px;
   display: flex;
+  flex-direction: column;
   &::-webkit-scrollbar {
     width: 3px;
   }
@@ -33,7 +34,9 @@ export const AboutTextsBlocks = styled(Col)`
   &::-webkit-scrollbar-thumb {
     background: #a0a1b1;
   }
-
+  .paragraphGeneral {
+    margin-top: 10px;
+  }
   .paragraph {
     font-weight: 400;
     font-size: 30px;
@@ -90,10 +93,10 @@ export const AboutBlock = styled(Col)`
 `;
 
 export const ReadMoreSpan = styled.span`
-  color: #1890ff;
+  color: #64ffff;
   cursor: pointer;
   font-weight: 500;
-
+  float: right;
   &:hover {
     text-decoration: underline;
   }
