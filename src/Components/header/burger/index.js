@@ -56,7 +56,10 @@ const Burger = () => {
             <Link to={"/about"}>About us</Link>
           </li>
           <li className="burgerText">
-            <a href="mailto:conspro777@gmail.com" target="_blank">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=conspro777@gmail.com"
+              target="_blank"
+            >
               For Partnership
             </a>
           </li>
@@ -83,7 +86,13 @@ const Burger = () => {
             </Link>
           </li>
           <li>
-            <Link to={"mailto:conspro777@gmail.com"} onClick={closeBurger}>
+            <Link
+              to={
+                "https://mail.google.com/mail/?view=cm&fs=1&to=conspro777@gmail.com"
+              }
+              onClick={closeBurger}
+              target="_blank"
+            >
               <BurgerImgIconBlock src={gmailIcon} alt="Gmail" />
             </Link>
           </li>

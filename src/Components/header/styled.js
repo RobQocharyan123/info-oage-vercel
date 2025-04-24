@@ -52,6 +52,16 @@ export const HeaderGeneralBlock = styled(Col)`
     margin-top: 5px;
   }
 
+  @media screen and (max-width: 850px) {
+    ul {
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 790px) {
     display: none;
   }

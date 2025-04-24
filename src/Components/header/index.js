@@ -76,7 +76,11 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <a href="mailto:conspro777@gmail.com" target="_blank">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=conspro777@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 For Partnership
               </a>
             </li>
@@ -105,7 +109,10 @@ const Header = () => {
           >
             <HeaderImgIconBlock src={twitterIcon} alt="Twitter" />
           </a>
-          <a href="mailto:conspro777@gmail.com" target="_blank">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=conspro777@gmail.com"
+            target="_blank"
+          >
             <HeaderImgIconBlock src={gmailIcon} alt="Gmail" />
           </a>
         </HeaderSocialIconsBlock>
