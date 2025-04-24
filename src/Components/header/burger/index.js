@@ -15,12 +15,14 @@ import infoIcon from "../../../Assets/header/console-icon.svg";
 import twitterIcon from "../../../Assets/header/twitter-icon.png";
 import gmailIcon from "../../../Assets/header/gmail-icon.svg";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Drawer } from "antd";
 
 const Burger = () => {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+  const activeLink = location.pathname.split("/")[1];
   const showDrawer = () => {
     setOpen(true);
   };
@@ -46,16 +48,31 @@ const Burger = () => {
       </BurgerLogoBlock>
       <BurgerBlock title="" onClose={closeBurger} open={open} width={240}>
         <ul>
-          <li className="burgerText" onClick={closeBurger}>
-            <Link to={"/info"}>What is Console?</Link>
+          <li onClick={closeBurger} className="burgerText">
+            <Link
+              to="/info"
+              className={` ${activeLink === "info" ? "activeLink" : ""}`}
+            >
+              What is Console?
+            </Link>
           </li>
-          <li className="burgerText" onClick={closeBurger}>
-            <Link to={"/roadmap"}>Roadmap</Link>
+          <li onClick={closeBurger} className="burgerText">
+            <Link
+              to="/roadmap"
+              className={` ${activeLink === "roadmap" ? "activeLink" : ""}`}
+            >
+              Roadmap
+            </Link>
           </li>
-          <li className="burgerText" onClick={closeBurger}>
-            <Link to={"/about"}>About us</Link>
+          <li onClick={closeBurger} className="burgerText">
+            <Link
+              to="/about"
+              className={` ${activeLink === "about" ? "activeLink" : ""}`}
+            >
+              About us
+            </Link>
           </li>
-          <li className="burgerText">
+          <li className={`burgerText`}>
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=conspro777@gmail.com"
               target="_blank"

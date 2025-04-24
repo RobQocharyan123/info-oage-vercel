@@ -9,14 +9,8 @@ export const AboutGeneralBlock = styled(Col)`
 export const AboutTextsBlocks = styled(Col)`
   width: 70%;
   height: calc(100vh - 200px);
-  background-color: rgba(217, 217, 217, 0.2);
-  box-shadow: rgb(204, 219, 232) 3px 3px 2px -1px inset,
-    rgba(255, 255, 255, 0.5) -3px -9px 1px -8px;
-  border-radius: 23px;
-  background-clip: padding-box;
-  opacity: 0.8;
+
   margin: 0 auto;
-  overflow-y: auto;
   text-align: justify;
   padding: 10px;
   margin-top: 30px;
