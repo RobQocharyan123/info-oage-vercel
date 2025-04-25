@@ -1,5 +1,5 @@
-import { Col } from "antd";
-import styled from "styled-components";
+import { Col } from 'antd';
+import styled from 'styled-components';
 
 export const InfoGeneralBlock = styled(Col)`
   position: relative;
@@ -23,7 +23,7 @@ export const InfoTextsBlocks = styled(Col)`
 
   @media screen and (max-width: 791px) {
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 0px;
   }
 `;
 
@@ -34,21 +34,14 @@ export const InfoBlock = styled(Col)`
   line-height: 45px;
   color: #fff;
 
-  @media screen and (max-width: 1100px) {
-    width: 200px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-  }
-
   @media screen and (max-width: 791px) {
-    width: 300px;
-    margin-top: 10px;
+    width: 80%;
+    margin-top: 40px;
   }
 
   @media screen and (max-width: 450px) {
-    width: 200px;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 30px;
   }
 `;

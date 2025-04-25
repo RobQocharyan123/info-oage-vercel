@@ -1,5 +1,5 @@
-import { styled } from "styled-components";
-import { Col, Drawer } from "antd";
+import { styled } from 'styled-components';
+import { Col, Drawer } from 'antd';
 
 export const BurgerGeneralBlock = styled(Col)`
   display: flex;
