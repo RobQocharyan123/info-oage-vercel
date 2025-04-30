@@ -1,5 +1,5 @@
-import { Col } from "antd";
-import styled from "styled-components";
+import { Col } from 'antd';
+import styled from 'styled-components';
 
 export const AboutGeneralBlock = styled(Col)`
   position: relative;
@@ -8,8 +8,6 @@ export const AboutGeneralBlock = styled(Col)`
 
 export const AboutTextsBlocks = styled(Col)`
   width: 70%;
-  height: calc(100vh - 200px);
-
   margin: 0 auto;
   text-align: justify;
   padding: 10px;
@@ -39,18 +37,16 @@ export const AboutTextsBlocks = styled(Col)`
     margin: 0 auto;
     padding: 10px;
     margin-top: 10px;
+
+    h2 {
+      text-align: left;
+    }
   }
   .paragraph {
     font-weight: 400;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 25px;
+    line-height: 30px;
     color: #fff;
-  }
-  @media screen and (max-width: 1400px) {
-    .paragraph {
-      font-size: 25px;
-      line-height: 30px;
-    }
   }
 
   @media screen and (max-width: 840px) {
@@ -64,6 +60,11 @@ export const AboutTextsBlocks = styled(Col)`
     .paragraph {
       font-size: 15px;
       line-height: 20px;
+
+      h2 {
+        font-size: 20px;
+        line-height: 20px;
+      }
     }
   }
 
@@ -71,6 +72,10 @@ export const AboutTextsBlocks = styled(Col)`
     .paragraph {
       font-size: 13px;
       line-height: 18px;
+
+      h2 {
+        font-size: 18px;
+      }
     }
   }
 `;
