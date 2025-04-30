@@ -62,7 +62,7 @@ export const BurgerBlock = styled(Drawer)`
     padding-inline-start: 0;
     .burgerText {
       a {
-        color: #ffffff !important;
+        color: #ffffff;
         font-weight: 400;
         font-size: 16px;
         padding: 2px 10px;
@@ -74,10 +74,32 @@ export const BurgerBlock = styled(Drawer)`
         }
       }
     }
-
+    .burgerEmail {
+      a {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 16px;
+        padding: 2px 10px;
+        border-radius: 18px;
+      }
+    }
     .activeLink {
       color: #000000 !important;
       background-color: #64ffff;
+    }
+  }
+
+  @media screen and (min-width: 791px) {
+    ul {
+      .burgerEmail {
+        a {
+          &:hover {
+            color: #000000 !important;
+            background-color: #64ffff;
+            box-shadow: 3px 2px 0px rgba(100, 255, 255, 0.5);
+          }
+        }
+      }
     }
   }
 `;

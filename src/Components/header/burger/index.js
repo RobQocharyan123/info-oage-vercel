@@ -3,26 +3,26 @@ import {
   BurgerGeneralBlock,
   BurgerIconBlock,
   BurgerImgIconBlock,
-  BurgerLogoBlock
-} from "./styled";
+  BurgerLogoBlock,
+} from './styled';
 
-import burgerLogo from "../../../Assets/burger/info-burger-logo-icon.svg";
-import burgerIcon from "../../../Assets/burger/info-project-burger-icon.svg";
-import cancelIcon from "../../../Assets/burger/info-project-cancel-icon.svg";
+import burgerLogo from '../../../Assets/burger/info-burger-logo-icon.svg';
+import burgerIcon from '../../../Assets/burger/info-project-burger-icon.svg';
+import cancelIcon from '../../../Assets/burger/info-project-cancel-icon.svg';
 
-import telegramIcon from "../../../Assets/header/telegram-icon.svg";
-import infoIcon from "../../../Assets/header/console-icon.svg";
-import twitterIcon from "../../../Assets/header/twitter-icon.png";
-import gmailIcon from "../../../Assets/header/gmail-icon.svg";
-import { useState } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
-import { Drawer } from "antd";
+import telegramIcon from '../../../Assets/header/telegram-icon.svg';
+import infoIcon from '../../../Assets/header/console-icon.svg';
+import twitterIcon from '../../../Assets/header/twitter-icon.png';
+import gmailIcon from '../../../Assets/header/gmail-icon.svg';
+import { useState } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Drawer } from 'antd';
 
 const Burger = () => {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-  const activeLink = location.pathname.split("/")[1];
+  const activeLink = location.pathname.split('/')[1];
   const showDrawer = () => {
     setOpen(true);
   };
@@ -36,8 +36,8 @@ const Burger = () => {
         <img
           src={burgerLogo}
           alt={burgerLogo}
-          onClick={() => navigate("/info")}
-          style={{ cursor: "pointer" }}
+          onClick={() => navigate('/info')}
+          style={{ cursor: 'pointer' }}
         />
         <img
           src={burgerIcon}
@@ -51,7 +51,7 @@ const Burger = () => {
           <li onClick={closeBurger} className="burgerText">
             <Link
               to="/info"
-              className={` ${activeLink === "info" ? "activeLink" : ""}`}
+              className={` ${activeLink === 'info' ? 'activeLink' : ''}`}
             >
               What is Console?
             </Link>
@@ -59,7 +59,7 @@ const Burger = () => {
           <li onClick={closeBurger} className="burgerText">
             <Link
               to="/roadmap"
-              className={` ${activeLink === "roadmap" ? "activeLink" : ""}`}
+              className={` ${activeLink === 'roadmap' ? 'activeLink' : ''}`}
             >
               Roadmap
             </Link>
@@ -67,22 +67,23 @@ const Burger = () => {
           <li onClick={closeBurger} className="burgerText">
             <Link
               to="/about"
-              className={` ${activeLink === "about" ? "activeLink" : ""}`}
+              className={` ${activeLink === 'about' ? 'activeLink' : ''}`}
             >
               About us
             </Link>
           </li>
-          <li className={`burgerText`}>
+          <li className={`burgerEmail`}>
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=conspro777@gmail.com"
               target="_blank"
+              rel="noreferrer"
             >
               For Partnership
             </a>
           </li>
 
           <li>
-            <Link to={"https://www.google.com/"} onClick={closeBurger}>
+            <Link to={'https://www.google.com/'} onClick={closeBurger}>
               <BurgerImgIconBlock src={telegramIcon} alt="Telegram" />
             </Link>
           </li>
@@ -95,7 +96,7 @@ const Burger = () => {
 
           <li>
             <Link
-              to={"https://x.com/ConsP_official"}
+              to={'https://x.com/ConsP_official'}
               target="_blank"
               onClick={closeBurger}
             >
@@ -105,7 +106,7 @@ const Burger = () => {
           <li>
             <Link
               to={
-                "https://mail.google.com/mail/?view=cm&fs=1&to=conspro777@gmail.com"
+                'https://mail.google.com/mail/?view=cm&fs=1&to=conspro777@gmail.com'
               }
               onClick={closeBurger}
               target="_blank"
