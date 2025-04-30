@@ -1,5 +1,5 @@
-import { Col } from "antd";
-import styled from "styled-components";
+import { Col } from 'antd';
+import styled from 'styled-components';
 
 export const HeaderGeneralBlock = styled(Col)`
   width: 100%;
