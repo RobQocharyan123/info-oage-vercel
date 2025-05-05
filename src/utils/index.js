@@ -1,6 +1,6 @@
 export const text = [
   {
-    title: 'There should be the following message:',
+    title: '',
     text: 'Console Protocol is a new decentralized platform set to be launched in 2025 in Singapore. The company aims to transform digital identity and data management, with a focus on gaming, AI, and Web3. Its mission is to implement self-sovereign identity (SSI), empowering users to control, protect, and monetize their data across Web2 and Web3 ecosystems while prioritizing privacy.',
   },
   {
