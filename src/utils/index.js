@@ -5,7 +5,7 @@ export const text = [
   },
   {
     title: 'Planned Products:',
-    text: 'Console Protocol: A modular data layer that unifies identities from Web2 (social media profiles, gaming accounts) and Web3 (crypto wallets, NFTs). The product will leverage blockchain for secure data storage and transfer. Console ID: A unique identifier that links data from various sources into a single, privacy-preserving profile. It will serve as the foundation for personalized experiences in games and services. Console Game: An integrated gaming platform where users can earn tokens, NFTs, and other assets through achievements and community participation.',
+    text: 'Console Protocol: A modular data layer that unifies identities from Web2 (social media profiles, gaming accounts) and Web3 (crypto wallets, NFTs). The product will leverage blockchain for secure data storage and transfer. <br /><br /> Console ID: A unique identifier that links data from various sources into a single, privacy-preserving profile. It will serve as the foundation for personalized experiences in games and services. <br /><br /> Console Game: An integrated gaming platform where users can earn tokens, NFTs, and other assets through achievements and community participation.',
   },
 
   {

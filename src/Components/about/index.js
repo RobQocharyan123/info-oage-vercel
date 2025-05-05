@@ -37,9 +37,14 @@ const About = () => {
             <div key={index} className="paragraphGeneral">
               <Paragraph className="paragraph">
                 <h2>{textTitle}</h2>
-                {isExpanded || para?.text.length <= 100
-                  ? para?.text
-                  : shortText + '...'}
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      isExpanded || para?.text.length <= 100
+                        ? para?.text
+                        : shortText + '...',
+                  }}
+                />
                 {para.text.length > 100 && (
                   <ReadMoreSpan
                     onClick={() => toggleText(index)}
